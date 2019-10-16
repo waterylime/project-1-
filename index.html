@@ -1,12 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="reset" href='css/reset.css'>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Courgette|IM+Fell+DW+Pica+SC&display=swap" rel="stylesheet">
+
+    <title>Book Finder</title>
 </head>
+
 <body>
-    
+
+    <section class="hero">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">
+                    Book Finder
+                </h1>
+                <h2 class="subtitle">
+                    What to read after
+                </h2>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="imputContainer">
+        <div class="notification">
+            <div class="field is-grouped">
+                Ever finshed a book, and found you want to read more like it?
+                If so enter the title of the book below or choose what your faviort genres in the book.
+                With a bit of computer magic we will give you some books to choose from.
+                <p class="control is-expanded">
+                    <input class="input" type="text" placeholder="Find a repository">
+                </p>
+                <p class="control">
+                    <a class="Sbtn">
+                       <button>Search </button>
+                    </a>
+                </p>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Fantasy" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Fantasy</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Romance Novel" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Romance Novel</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Horror" value="option3" disabled>
+                    <label class="form-check-label" for="inlineCheckbox3">Horror</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Historical Drama" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Historical Drama</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Mystery" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Mystery</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Thriller" value="option3" disabled>
+                    <label class="form-check-label" for="inlineCheckbox3">Thriller</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Fiction" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Fiction </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Science Fiction" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Science Fiction</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Historical Fiction" value="option3" disabled>
+                    <label class="form-check-label" for="inlineCheckbox3">Historical Fiction</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Drama" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Drama</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Autobiography" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Autobiography</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Poetry" value="option3" disabled>
+                    <label class="form-check-label" for="inlineCheckbox3">Poetry</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Memoir" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Memoir</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Humour" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Humour</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Fairy Tale" value="option3" disabled>
+                    <label class="form-check-label" for="inlineCheckbox3">Fairy Tale</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Non-Fiction" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Non-Fiction</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Crime Fiction" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Crime Fiction</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Biography" value="option3" disabled>
+                    <label class="form-check-label" for="inlineCheckbox3">Biography</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Creative Nonfiction" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Creative Nonfiction</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Self-help" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Self-help</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Coming-of-Age" value="option3" disabled>
+                    <label class="form-check-label" for="inlineCheckbox3">Coming-of-Age</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Childern's Literature" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Childern's Literature</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Picture Book" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Picture Book</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Political Thiller" value="option3" disabled>
+                    <label class="form-check-label" for="inlineCheckbox3">Political Thiller</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Distopia" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Distopia</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="History" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">History</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Fable" value="option3" disabled>
+                    <label class="form-check-label" for="inlineCheckbox3">Fable</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Fan Fiction" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Fan Fiction</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Legend" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Legend</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Magical Realism" value="option3" disabled>
+                    <label class="form-check-label" for="inlineCheckbox3">Magical Realism</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Art" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Art</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Mythology" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Mythology</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Adventure" value="option3" disabled>
+                    <label class="form-check-label" for="inlineCheckbox3">Adventure</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Suspense" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Suspense</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Paranormal Romance" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Paranormal Romance</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Satire" value="option3" disabled>
+                    <label class="form-check-label" for="inlineCheckbox3">Satire</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Action/Adventure" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Action/Adventure</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Time Travle" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Time Travle</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Travle" value="option3" disabled>
+                    <label class="form-check-label" for="inlineCheckbox3">Travle</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Contemporary Fantasy" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Contemporary Fantasy</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="Foreign " value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Foreign </label>
+                </div>
+                <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Other</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control form-control-sm" id="Other">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
