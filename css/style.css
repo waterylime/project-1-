@@ -34,14 +34,16 @@ body {
 	background: none;
 }
 .form-check {
-	display: inline-block;
+    display: inline-block;
+    padding-right: 10px;
 }
 
 .results {
 	background-color: antiquewhite;
 	font-family: 'Courgette', cursive;
 	text-align: center;
-	margin-top: 65px;
+    margin-top: 65px;
+    font-size: 19px;
 }
 
 #other {
