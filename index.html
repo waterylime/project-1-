@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Google Books</title>
+
+    
+	
+	
 </head>
 <body>
+    <div id="search">
+        <form id="myform">
+            <div class= "input-field">
+                <input type ="search" id= "books">
+                <label for="search">Search Books</label>
+            </div>
+            <button class="btn red">Search Books</button>
+        </form>
+    </div>
+    <div id="result"></div>
+    <div id="authors"></div>
     
+    
+    <script type="text/javascript" src="https://www.google.com/books/jsapi.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
