@@ -13,5 +13,6 @@ $(document).ready(function(){
 
 
 $(title).on("click", function(){
+    summaryDiv.createElement("p");
     $(summaryDiv).append(title.summary);
 });
