@@ -2,6 +2,7 @@ body {
 	background-image: url("../image/D1028_49_409_1200.jpg");
 	/* background-size: stack; */
 	background-attachment: fixed;
+	padding-bottom: 70px;
 }
 
 .hero {
@@ -30,7 +31,7 @@ body {
 	font-size: 35px;
 	background-color: antiquewhite;
 	/* outline: antiquewhite; */
-	border: none;
+	border: 2px, solid, black;
 	background: none;
 }
 .form-check {
@@ -42,7 +43,9 @@ body {
 	background-color: antiquewhite;
 	font-family: 'Courgette', cursive;
 	text-align: center;
-    margin-top: 65px;
+	/* margin-top: 65px; */
+	padding-top: 10px;
+	padding-bottom:120px;
     font-size: 19px;
 }
 
@@ -52,6 +55,7 @@ body {
 
 #result {
 	color: white;
+	/* margin-bottom: 40px; */
 }
 
 .card {
@@ -59,5 +63,18 @@ body {
 }
 
 .book {
-	margin: auto;
+	/* margin: auto; */
+	margin: 0;
+	background-color: antiquewhite;
+	font-family: 'Courgette', cursive;
+	text-align: center;
+    margin-top: 65px;
+	font-size: 19px;
+	color: black;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.new{
+	text-decoration: underline;
 }
