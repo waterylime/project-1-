@@ -24,7 +24,8 @@ $(document).ready(function () {
                 var pTwo = $("<p>").text("Author: " + response.items[0].volumeInfo.authors[0]);
                 var pThree = $("<img src=" + response.items[0].volumeInfo.imageLinks.thumbnail + ">");
                 var pFour = $("<p>").text("Synopsis: " + response.items[0].volumeInfo.description);
-                bookDiv.append(pOne, pTwo, pThree, pFour);
+                var pFive = $("<p>").text("Content: " + response.items[0].volumeInfo.contentVersion);
+                bookDiv.append(pOne, pTwo, pThree, pFour, pFive);
                 $("#result").prepend(bookDiv);
 
                 console.log(response.items[0].volumeInfo.authors[0]);
