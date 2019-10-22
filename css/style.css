@@ -34,16 +34,16 @@ body {
 	background: none;
 }
 .form-check {
-    display: inline-block;
-    padding-right: 10px;
+	display: inline-block;
+	padding-right: 10px;
 }
 
 .results {
 	background-color: antiquewhite;
 	font-family: 'Courgette', cursive;
 	text-align: center;
-    margin-top: 65px;
-    font-size: 19px;
+	margin-top: 65px;
+	font-size: 19px;
 }
 
 #other {
@@ -60,4 +60,13 @@ body {
 
 .book {
 	margin: auto;
+}
+
+.card{
+	font-family: 'Courgette', cursive;
+	font-size: 35px;
+	background-color: antiquewhite;
+	/* outline: antiquewhite; */
+	border: none;
+	background: none;
 }
