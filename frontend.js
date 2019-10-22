@@ -2,13 +2,14 @@
 
 var resultsDiv = document.getElementById("results");
 var title = suggestedResult[i];
-var resultSrc = src of title;
-var source = "src=" + "'" + resultSrc + "'";
+var resultSrc = "src of title";
+// var source = "src=" + "'" + resultSrc + "'";
 var summaryDiv = document.getElementById("p");
 
 
-$(document).ready(function(){
-    $(results).prepend("<h1>" + "<a href='#' " + source + ">" + title + "</a>" + "</h1>" + "<div id='p'></div>")
+$(results).ready(function(){
+    // $(".results").prepend("<h1>" + "<a href='#' " + source + ">" + title + "</a>" + "</h1>" + "<div id='p'></div>")
+    $(".results").prepend(`<h1><a href="#" src="${resultSrc}" alt="book title">${title}</a><h1>`);
 });
 
 

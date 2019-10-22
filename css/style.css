@@ -1,60 +1,51 @@
 body {
-	background-image: url("../image/download.jpg");
+	background-image: url("../image/D1028_49_409_1200.jpg");
 	/* background-size: stack; */
 	background-attachment: fixed;
 }
 
-.hero{
-    background-color: antiquewhite;
-    text-align: center;
-    font-family: 'IM Fell DW Pica SC', serif;
+.hero {
+	background-color: antiquewhite;
+	text-align: center;
+	font-family: 'IM Fell DW Pica SC', serif;
 }
-.title{
-    font-size: 36px;
+.title {
+	font-size: 36px;
 }
-.imputContainer{
-    background-color: antiquewhite;
-    font-family: 'Courgette', cursive;
-    text-align: center;
-    margin-top: 65px;
+.imputContainer {
+	background-color: antiquewhite;
+	font-family: 'Courgette', cursive;
+	text-align: center;
+	margin-top: 65px;
 }
 
-.Sbtn{
-    font-family: 'Courgette', cursive;
+.input {
+	font-family: 'Courgette', cursive;
+	width: 325px;
+	height: 25px;
+	font-size: 25px;
 }
-.form-check{
+.Sbtn {
+	font-family: 'Courgette', cursive;
+	font-size: 35px;
+	background-color: antiquewhite;
+	/* outline: antiquewhite; */
+	border: none;
+	background: none;
+}
+.form-check {
     display: inline-block;
+    padding-right: 10px;
 }
 
+.results {
+	background-color: antiquewhite;
+	font-family: 'Courgette', cursive;
+	text-align: center;
+    margin-top: 65px;
+    font-size: 19px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#other {
+	font-family: 'Courgette', cursive;
+}
