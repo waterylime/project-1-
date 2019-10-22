@@ -2,7 +2,7 @@ body {
 	background-image: url("../image/D1028_49_409_1200.jpg");
 	/* background-size: stack; */
 	background-attachment: fixed;
-	padding-bottom: 70px;
+	padding-bottom: 120px;
 }
 
 .hero {
@@ -81,4 +81,8 @@ body {
 
 .new{
 	text-decoration: underline;
+}
+
+img{
+	padding: 10px;
 }
