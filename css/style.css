@@ -49,3 +49,15 @@ body {
 #other {
 	font-family: 'Courgette', cursive;
 }
+
+#result {
+	color: white;
+}
+
+.card {
+	display: inline-block;
+}
+
+.book {
+	margin: auto;
+}
