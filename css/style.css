@@ -2,6 +2,7 @@ body {
 	background-image: url("../image/D1028_49_409_1200.jpg");
 	/* background-size: stack; */
 	background-attachment: fixed;
+	padding-bottom: 120px;
 }
 
 .hero {
@@ -9,14 +10,17 @@ body {
 	text-align: center;
 	font-family: 'IM Fell DW Pica SC', serif;
 }
+
 .title {
 	font-size: 36px;
 }
+
 .imputContainer {
 	background-color: antiquewhite;
 	font-family: 'Courgette', cursive;
 	text-align: center;
 	margin-top: 65px;
+	align-content: center;
 }
 
 .input {
@@ -30,8 +34,12 @@ body {
 	font-size: 35px;
 	background-color: antiquewhite;
 	/* outline: antiquewhite; */
-	border: none;
+	border: 2px, solid, black;
 	background: none;
+}
+
+.Sbtn:hover{
+	cursor: pointer;
 }
 .form-check {
 	display: inline-block;
@@ -42,8 +50,15 @@ body {
 	background-color: antiquewhite;
 	font-family: 'Courgette', cursive;
 	text-align: center;
+
+	/* margin-top: 65px; */
+	padding-top: 10px;
+	padding-bottom:120px;
+    font-size: 19px;
+
 	margin-top: 65px;
 	font-size: 19px;
+
 }
 
 #other {
@@ -52,6 +67,7 @@ body {
 
 #result {
 	color: white;
+	/* margin-bottom: 40px; */
 }
 
 .card {
@@ -59,6 +75,35 @@ body {
 }
 
 .book {
+
+	/* margin: auto; */
+	margin: 0;
+	background-color: antiquewhite;
+	font-family: 'Courgette', cursive;
+	text-align: center;
+    /* margin-top: 65px; */
+	font-size: 19px;
+	color: black;
+	/* padding-top: 20px; */
+	padding-bottom: 20px;
+}
+
+.new{
+	text-decoration: underline;
+}
+
+img{
+	padding: 10px;
+}
+
+#intro{
+	font-size: 20px;
+	padding-right: 110px;
+	padding-left: 110px;
+	padding-top: 40px;
+	padding-bottom: 30px;
+}
+
 	margin: auto;
 }
 
@@ -70,3 +115,4 @@ body {
 	border: none;
 	background: none;
 }
+

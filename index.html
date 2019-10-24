@@ -31,10 +31,10 @@
 
     <div class="imputContainer">
         <div class="notification">
-            <div class="field is-grouped">
-                Ever finshed a book, and found you want to read more like it? Want a suggestion for book?
-                If so enter the title of the book below, or choose what your faviort genres are.
-                With a bit of computer magic we will give you some books to choose from. Enjoy.
+            <div class="field is-grouped" id="intro">
+                Ever finshed a book, and found you want to read more like it?<br>
+                If so enter the title of the book below or choose your favorite genres with the checkmarks. <br>
+                With a bit of computer magic we will give you some books to choose from.
                 <p class="control is-expanded">
                     <input class="input" type="text" placeholder="Name of Book">
                 </p>
@@ -43,7 +43,7 @@
                         <button class="Sbtn">Search </button>
                     </a>
                 </p>
-                <div class="form-check form-check-inline">
+                <!-- <div class="form-check form-check-inline">
                     <input class="form-check-input" type="checkbox" id="fantasy" value="option1">
                     <label class="form-check-label" for="inlineCheckbox1">Fantasy</label>
                 </div>
@@ -211,23 +211,23 @@
                 <div class="col-sm-10">
                     <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Other</label>
                     <input type="genre" placeholder="Unlisted genres" class="form-control form-control-sm" id="other">
-                </div>
-            </div>
+                </div> -->
+            <!-- </div> -->
 
-        </div>
+        <!-- </div> -->
 
-    </div>
+    <!-- </div> -->
     </div>
 
     <div class="container">
         <div id="result"></div>
     </div>
 
-    <div class="container">
-        <p>Here are you suggestions:</p>
-        <div class="results">
+    <div class="container" id="suggested">
+        <!-- <div class="results">
+                 <h2>Your Recommended Reads</h2>
             
-        </div>
+        </div> -->
     </div>
 
 
