@@ -33,6 +33,7 @@
         var queryURL = "https://cors-anywhere.herokuapp.com/https://www.googleapis.com/books/v1/volumes?q=" + author + "&key=AIzaSyApn7ZVS6vtzHfrwGpr058OiKyAkrZ_U6o";
         
         $.ajax({
+
             url: queryURL,
             method: "GET"
         }).then(function (response) {
@@ -41,10 +42,21 @@
             var resultsDiv = $("<div>").addClass("results");
             $("#suggested").append(resultsDiv);
             
+
+            url : queryURL,
+            method : "GET"
+        }).then(function(response){
+            console.log(response)
+            $(".results").empty();
+
+
             for (var i = 1; i < response.items.length; i++) {
                 var bookLoop = response.items[i].volumeInfo;
                 var booksDiv = $("<div>").addClass("card");
+                var nameOfBook = $("<button>").html(response.items[i].volumeInfo.title);
+                nameOfBook.addClass("book-name")
                 var bookImage = $("<img src=" + response.items[i].volumeInfo.imageLinks.thumbnail + ">");
+
                 booksDiv.attr("data-book", bookImage);
                 booksDiv.append(bookImage);
                 // $(results).prepend(newReads, booksDiv);
@@ -52,24 +64,45 @@
                 console.log(resultsDiv);
                 console.log($(resultsDiv));
 
+
+                console.log(nameOfBook);
+                booksDiv.append(nameOfBook, bookImage);
+                $(".results").prepend(booksDiv);
+                
+
             }
         });
     }
 
 
-    // $(".card").on("click", function (event) {
-    //     var bookReview = $(this).attr("data-book");
-    //     var APIkey = "NqVSU6b1IYEiBPODKvTLgtevZp5gIkDk";
-    //     var queryUrl1 = "https://api.nytimes.com/svc/books/v3/reviews.json?title=" + bookReview + "&api-key=" + APIkey;
+    $(".results").on("click", "button", function (event) {
+        console.log($(this));
+        var newReview = "";
+        var bookReview = $(this).text();
+        for (var i = 0; i < bookReview.length; i++) {
+            newReview = newReview + bookReview[i].replace(" ", "+");
+        }
+        
+        console.log(typeof newReview);
+
+       
+        
+        var queryUrl1 = "https://api.nytimes.com/svc/books/v3/reviews.json?title=" + newReview + "&api-key=l2yFj0rIKeTYnzWTDBrNkPFZFPiAFM4z";
 
 
-    //     $.ajax({
-    //         url: queryUrl1,
-    //         method: "GET"
-    //     }).then(function(review){
-    //         console.log(review);
+        $.ajax({
+            url: queryUrl1,
+            method: "GET"
+        }).then(function(review){
+            console.log(review);
 
 
-    //     })
+        })
+
 
     // })
+
+    
+    })
+    
+
