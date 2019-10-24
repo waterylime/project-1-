@@ -42,18 +42,23 @@ body {
 	cursor: pointer;
 }
 .form-check {
-    display: inline-block;
-    padding-right: 10px;
+	display: inline-block;
+	padding-right: 10px;
 }
 
 .results {
 	background-color: antiquewhite;
 	font-family: 'Courgette', cursive;
 	text-align: center;
+
 	/* margin-top: 65px; */
 	padding-top: 10px;
 	padding-bottom:120px;
     font-size: 19px;
+
+	margin-top: 65px;
+	font-size: 19px;
+
 }
 
 #other {
@@ -70,6 +75,7 @@ body {
 }
 
 .book {
+
 	/* margin: auto; */
 	margin: 0;
 	background-color: antiquewhite;
@@ -97,3 +103,16 @@ img{
 	padding-top: 40px;
 	padding-bottom: 30px;
 }
+
+	margin: auto;
+}
+
+.card{
+	font-family: 'Courgette', cursive;
+	font-size: 35px;
+	background-color: antiquewhite;
+	/* outline: antiquewhite; */
+	border: none;
+	background: none;
+}
+
